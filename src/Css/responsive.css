@@ -1,0 +1,69 @@
+@media (min-width: 700px) {
+ #home {
+    display: flex;
+    gap: 10rem;
+ }
+
+ #home .lastProject {
+    margin-top: 3.5rem;
+ }
+
+ #social ul li a img {
+    max-width: 3rem;
+    margin: 2.3rem;
+    transition: transform 0.2s;
+    float: right;
+  }
+
+  #nav-bar {
+    display: flex;
+  }
+
+  #tittle {
+    font-size: 1.5rem;
+  }
+
+  #tittle img {
+    max-width: 2.5rem;
+  }
+
+  .burger {
+display: none;  }
+}
+
+@media (min-width: 1200px) {
+   #home {
+    height: 100vh;
+   }
+
+   #home .text-main {
+    padding-top: 15rem;
+    padding-left: 3.5rem;
+  }
+
+  #home .lastProject {
+    margin-top: 8rem;
+    width: 35rem;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #home .lastProject h2 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  #home .lastProject p {
+    color: var(--main--color);
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  #home .lastProject img {
+    max-width: 28rem;
+  }
+  
+}

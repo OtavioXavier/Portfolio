@@ -1,0 +1,287 @@
+/* Reset */
+:root {
+  /* REM agora equivale a 10px */
+  font-size: 62.5%;
+  /* colors */
+  --text--color: #fff;
+  --main--color: #a2690b;
+  --background--color: #d9d9d9;
+  --banner--color: #0f171f;
+}
+
+.hiden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+ul,
+li {
+  display: flex;
+}
+
+h2,
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: var(--text--color);
+}
+
+body {
+  background-color: var(--background--color);
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+/* Header */
+
+header {
+  max-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: sticky;
+  top: 0;
+
+  background-color: var(--background--color);
+}
+
+#tittle {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  float: left;
+}
+
+#tittle img {
+  max-width: 2rem;
+  margin-right: 0.2rem;
+}
+
+#tittle span {
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+
+#tittle a {
+  color: var(--banner--color);
+  font-weight: 500;
+}
+
+#tittle a:hover {
+  color: var(--main--color);
+}
+
+nav#social {
+  clear: both;
+}
+
+#social ul li a img {
+  max-width: 2rem;
+  margin: 2.3rem;
+  transition: transform 0.2s;
+}
+
+#social ul li a img:hover {
+  transform: rotate(45deg);
+}
+
+/* Nav-Bar */
+
+#nav-bar {
+    display: none;
+}
+
+#nav-bar ul li a{
+    color: var(--banner--color);
+    font-size: 1.5rem;
+}
+
+#nav-bar ul li{
+  transition: border-bottom .2s; 
+}
+
+#nav-bar ul li:hover{
+   border-bottom: .2rem solid var(--main--color);
+}
+
+#nav-bar ul{
+    display: flex;
+    gap: 5rem;
+}
+
+/* sidebar menu */
+
+.sidebar {
+  inset: 0;
+  position: absolute;
+}
+
+.sidebar.open {
+  position: absolute;
+  background-color: #0000009a;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.sidebar ul,
+.sidebar li {
+  display: block;
+  margin-bottom: 5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  transition: font-size .6s, color .6s;
+}
+
+.sidebar ul li a:hover {
+  border-bottom: .5rem solid var(--main--color);
+  color: var(--background--color);
+  font-size: 5.2rem;
+}
+
+.close {
+  margin: 2rem;
+  position: absolute;
+  transition: transform 0.3s;
+}
+.close:hover {
+  transform: scale(1.2);
+}
+
+/* Menu Burguer */
+
+.burger {
+  transition: transform .5s;
+}
+
+.burger:hover {
+  transform: rotate(90deg);
+}
+
+/* Home */
+
+#home {
+  background-color: var(--banner--color);
+  color: var(--text--color);
+}
+
+/* Home Text */
+
+#home .text-main {
+  padding-top: 5rem;
+  padding-left: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+#home .text-main h2 {
+  color: var(--main--color);
+  font-size: 2rem;
+}
+
+#home .text-main h1 {
+  font-size: 6rem;
+  margin: 3.5rem 0 3.5rem 0;
+  box-shadow: 0.2em 0 0 var(--main--color);
+  width: 38rem;
+  overflow: hidden;
+  color: var(--text--color);
+  white-space: nowrap;
+  animation: caret 0.5s step-end infinite alternate, type 5s steps(23, end);
+}
+
+#home .text-main p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--background--color);
+  margin-bottom: 5rem;
+}
+
+#home .text-main a {
+  border-radius: 1.5rem;
+  padding: 1.5rem 2.5rem;   
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: var(--main--color);
+  color: var(--text--color);
+}
+
+#home .text-main #cv {
+    background-color: transparent;
+    border: .2rem dotted var(--main--color);
+}
+
+#home .buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Last Project Card */
+
+#home .lastProject {
+  background-color: var(--text--color);
+  width: 25rem;
+  height: 35rem;
+  margin: auto;
+  /* margin-bottom: 6rem; */
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  text-align: center;
+  line-height: 0;
+}
+
+#home .lastProject h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--banner--color);
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+#home .lastProject h2 svg {
+  max-width: 2.5rem;
+}
+
+#home .lastProject p {
+  color: var(--main--color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+#home .lastProject img {
+  max-width: 20rem;
+}
+
+/* Rodape text */
+.rodape {
+    color: var(--text--color);
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  background-color: var(--banner--color);
+}
