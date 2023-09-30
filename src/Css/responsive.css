@@ -79,4 +79,9 @@
   #imgs-about {
     gap: 5rem;
   }
+
+  .block-projects {
+    display: grid;
+    grid-template-columns: 40rem 40rem 40rem;
+  }
 }
