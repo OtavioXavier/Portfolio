@@ -61,7 +61,9 @@ header {
   position: sticky;
   top: 0;
 
-  background-color: var(--background--color);
+  background-color: rgba(255, 255, 255, 0.682);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 #tittle {
@@ -85,7 +87,7 @@ header {
 #tittle a {
   color: var(--banner--color);
   font-weight: 500;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 #tittle a:hover {
@@ -307,7 +309,7 @@ nav#social {
 }
 
 #about .text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
   text-align: left;
   color: var(--opac--color);
@@ -335,7 +337,7 @@ nav#social {
 }
 
 #works {
-  height: 100vh;
+  height: 100%;
 }
 
 #works h1 {
@@ -360,7 +362,36 @@ nav#social {
   text-align: left;
   border-radius: 1rem;
   margin-bottom: 5rem;
-  transition: transform .3s;
+  transition: transform 0.3s;
+}
+/* Animacao */
+.project-block {
+  --border-size: 3px;
+  --border-angle: 0turn;
+    background-image: conic-gradient(
+        from var(--border-angle),
+        var(--banner--color),
+        var(--banner--color) 50%,
+        var(--banner--color)
+      ),
+    conic-gradient(from var(--border-angle), transparent 20%, #F0A329 , #0B5BA3);
+  background-size: calc(100% - (var(--border-size) * 2))
+      calc(100% - (var(--border-size) * 2)),
+    cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  animation: bg-spin 5s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
 }
 
 .project-block:hover {
@@ -376,7 +407,6 @@ nav#social {
   color: var(--background--color);
 }
 
-
 .project-block .link-project-block img {
   max-width: 2.5rem;
   max-height: 2.5rem;
@@ -385,29 +415,55 @@ nav#social {
 .project-block .link-project-block {
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   background-color: var(--main--color);
   width: 80%;
   justify-content: center;
   border-radius: 1rem;
   margin-left: 8%;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .project-block .link-project-block:hover {
   transform: scale(1.1);
 }
 .project-block .technologys {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 .project-block span {
-   background-color: var(--opac--color);
-   padding: 1rem;
-   transition: background-color .3s;
+  background-color: var(--opac--color);
+  padding: 1rem;
+  transition: background-color 0.3s;
 }
 
 .project-block span:hover {
   background-color: var(--main--color);
+}
+
+footer {
+  height: 10rem;
+  background-color: var(--banner--color);
+  display: flex;
+  justify-content: center;
+  color: var(--text--color);
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+footer p b {
+  color: var(--main--color);
+}
+
+footer img {
+  width: 5rem;
+  height: 5rem;
 }

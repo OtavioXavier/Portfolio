@@ -84,4 +84,9 @@
     display: grid;
     grid-template-columns: 40rem 40rem 40rem;
   }
+
+  footer {
+    justify-content: left;
+    padding: 5rem;
+  }
 }

@@ -16,6 +16,11 @@
     75% {margin-left: -5px;}
     100% {margin-left: 0;}
   }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
 
  p::selection, h1::selection {
   background-color:#a2690b;;
