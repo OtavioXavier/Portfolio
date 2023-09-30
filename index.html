@@ -26,7 +26,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./src/Css/Style.css" />
     <link rel="stylesheet" href="./src/Css/keyframes.css" />
-    <link rel="stylesheet" href="./src/Css/responsive.css" />
+    <link rel="stylesheet" href="./src/Css/responsive.css">
   </head>
   <body>
     <main>
@@ -38,9 +38,9 @@
         </p>
         <nav id="nav-bar">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><span><a href="#about">About</a></span></li>
+            <li><span><a href="#home">Home</a></span></li>
+            <li><span><a href="#projects">Projects</a></span></li>
           </ul>
         </nav>
         <nav id="social" class="">
@@ -101,10 +101,8 @@
           <img src="./src/img/Icons/menu.svg" alt="menu" />
         </button>
         <sidebar class="sidebar hiden" onclick="toggleMenu()">
-          <button class="close">
-            <img src="./src/img/Icons/close.svg" alt="" />
-          </button>
-          <nav class="menu-list hiden">
+          <button class="close"><img src="./src/img/Icons/close.svg" alt=""></button>
+          <nav class="menu-list  hiden">
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -117,22 +115,23 @@
         <div class="text-main">
           <h2>Software Engineer</h2>
           <h1>Otavio Xavier</h1>
-          <p class="text-port">Welcome to my portfolio. I am a front-end programmer</p>
+          <p class="text-port">
+            Welcome to my portfolio. I am a front-end programmer
+          </p>
           <div class="buttons">
-            <a href="https://github.com/OtavioXavier" 
-            target="_blank">
-            All Projects</a>
-            <a
-              id="cv"
-              href="https://drive.google.com/file/d/1B17nB8F_-pFFF_RRU7YSc7THzBtZU01b/view?usp=sharing"
-              target="_blank"
+            <a href="https://github.com/OtavioXavier" target="_blank"
+              >All Projects</a
+            >
+            <a id="cv" href="https://drive.google.com/file/d/1B17nB8F_-pFFF_RRU7YSc7THzBtZU01b/view?usp=sharing" target="_blank"
               >CV Download</a
             >
           </div>
         </div>
         <div class="lastProject">
           <div class="text-lastProject">
-            <h2>The last project done
+            <h2>
+              The last project done
+
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="65"
@@ -171,8 +170,21 @@
         </div>
       </section>
       <p class="rodape">scroll down to see it all</p>
-      <section id="about" class="hiden"></section>
-      <section id="works" class="hiden"></section>
+      <section id="about" class="">
+        <div id="text-about">
+          <h2>My walk</h2>
+          <h1>About me</h1>
+          <p class="text">I was born in 2005 and since then I've been passionate about computers and everything that involves them. My father introduced me to the world of hardware at a young age and I completely fell in love. My favorite pastime was disassembling, cleaning, and reassembling my computer until I discovered programming. After that, I couldn't think of anything else.</p>
+          <p class="text">I have been studying software engineering since 2023.1 and I am part of the research center of UCSAL (Catholic University of Salvador). I work in the CIM (City Information Modelling) project, where I am the leader of the research and work. I am involved in the whole project, including the academic, back-end and front-end part.</p>
+        </div>
+        <div id="imgs-about">
+          <img class="img-thumb" src="./src/img/CIM/Imagem-CIM-1.jpeg" alt="Imagem que referencia o Cim 1">
+          <img class="img-thumb" src="./src/img/CIM/Imagem-CIM-2.jpeg" alt="Imagem que referencia o Cim 2">
+        </section>
+        </div>
+      <section id="works" class="">
+        
+      </section>
     </main>
   </body>
   <script src="./src/js/script.js"></script>

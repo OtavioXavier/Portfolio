@@ -7,6 +7,7 @@
   --main--color: #a2690b;
   --background--color: #d9d9d9;
   --banner--color: #0f171f;
+  --opac--color: rgb(73, 73, 73);
 }
 
 .hiden {
@@ -55,8 +56,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   position: sticky;
   top: 0;
 
@@ -84,6 +85,7 @@ header {
 #tittle a {
   color: var(--banner--color);
   font-weight: 500;
+  transition: color .3s;
 }
 
 #tittle a:hover {
@@ -96,7 +98,7 @@ nav#social {
 
 #social ul li a img {
   max-width: 2rem;
-  margin: 1.2rem;
+  margin: 2.3rem;
   transition: transform 0.2s;
 }
 
@@ -107,25 +109,23 @@ nav#social {
 /* Nav-Bar */
 
 #nav-bar {
-    display: none;
+  display: none;
 }
 
-#nav-bar ul li a{
-    color: var(--banner--color);
-    font-size: 1.5rem;
+#nav-bar ul li a {
+  color: var(--banner--color);
+  font-size: 1.5rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: border-bottom 0.3s;
 }
 
-#nav-bar ul li a{
-  transition: border-bottom .3s; 
+#nav-bar ul li a:hover {
+  border-bottom: 0.2rem solid var(--main--color);
 }
 
-#nav-bar ul li a:hover{
-   border-bottom: .2rem solid var(--main--color);
-}
-
-#nav-bar ul{
-    display: flex;
-    gap: 5rem;
+#nav-bar ul {
+  display: flex;
+  gap: 5rem;
 }
 
 /* sidebar menu */
@@ -155,11 +155,11 @@ nav#social {
 }
 
 .sidebar ul li a {
-  transition: font-size .6s, color .6s;
+  transition: font-size 0.6s, color 0.6s;
 }
 
 .sidebar ul li a:hover {
-  border-bottom: .5rem solid var(--main--color);
+  border-bottom: 0.5rem solid var(--main--color);
   color: var(--background--color);
   font-size: 5.2rem;
 }
@@ -176,7 +176,7 @@ nav#social {
 /* Menu Burguer */
 
 .burger {
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .burger:hover {
@@ -204,10 +204,10 @@ nav#social {
 }
 
 #home .text-main h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   margin: 3.5rem 0 3.5rem 0;
   box-shadow: 0.2em 0 0 var(--main--color);
-  width: 32rem;
+  width: 38rem;
   overflow: hidden;
   color: var(--text--color);
   white-space: nowrap;
@@ -223,7 +223,7 @@ nav#social {
 
 #home .text-main a {
   border-radius: 1.5rem;
-  padding: 1.5rem 2.5rem;   
+  padding: 1.5rem 2.5rem;
   font-size: 1.3rem;
   font-weight: 600;
   background-color: var(--main--color);
@@ -231,13 +231,13 @@ nav#social {
 }
 
 #home .text-main #cv {
-    background-color: transparent;
-    border: .2rem dotted var(--main--color);
+  background-color: transparent;
+  border: 0.2rem dotted var(--main--color);
 }
 
 #home .buttons {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 /* Last Project Card */
@@ -280,8 +280,59 @@ nav#social {
 
 /* Rodape text */
 .rodape {
-    color: var(--text--color);
+  color: var(--text--color);
   padding: 2.5rem;
   font-size: 1.5rem;
   background-color: var(--banner--color);
 }
+
+/* About */
+
+#about h2 {
+  color: var(--main--color);
+  margin-top: 5rem;
+  font-size: 2.8rem;
+}
+
+#about h1 {
+  font-size: 6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+#about #text-about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#about .text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  color: var(--opac--color);
+}
+
+#about .text b {
+  color: var(--main--color);
+}
+
+#imgs-about {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 17rem;
+}
+#imgs-about .img-thumb {
+  border-radius: 1rem;
+  min-width: 16rem;
+  min-height: 9rem;
+  max-width: 64rem;
+  max-height: 36rem;
+}
+
+
