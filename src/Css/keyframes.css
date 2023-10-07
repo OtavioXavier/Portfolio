@@ -22,6 +22,12 @@
     }
   }
 
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
  p::selection, h1::selection {
   background-color:#a2690b;;
  }

@@ -206,10 +206,10 @@ nav#social {
 }
 
 #home .text-main h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   margin: 3.5rem 0 3.5rem 0;
   box-shadow: 0.2em 0 0 var(--main--color);
-  width: 38rem;
+  width: 35rem;
   overflow: hidden;
   color: var(--text--color);
   white-space: nowrap;
@@ -268,6 +268,7 @@ nav#social {
   max-width: 2.5rem;
 }
 
+
 #home .lastProject p {
   color: var(--main--color);
   font-weight: 400;
@@ -277,6 +278,11 @@ nav#social {
 
 #home .lastProject img {
   max-width: 20rem;
+  transition: transform 1s;
+}
+
+#home .lastProject img:hover {
+  transform: rotate(360deg);
 }
 
 /* Rodape text */
@@ -328,12 +334,21 @@ nav#social {
   padding-right: 1rem;
   margin-bottom: 17rem;
 }
+
 #imgs-about .img-thumb {
   border-radius: 1rem;
   min-width: 16rem;
   min-height: 9rem;
   max-width: 64rem;
   max-height: 36rem;
+}
+
+.img-thumb {
+  transition: transform .3s;
+}
+
+#imgs-about:hover > :not(:hover) {
+  transform: scale(.8);
 }
 
 #works {
@@ -388,11 +403,7 @@ nav#social {
   }
 }
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
-}
+
 
 .project-block:hover {
   transform: scale(1.1);
