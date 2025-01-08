@@ -1,243 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Otavio Xavier</title>
+<html lang="pt-br">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mooli&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="shortcut icon"
-      href="./src/img/Logo Otavio.svg"
-      type="image/x-icon"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/Css/Style.css" />
-    <link rel="stylesheet" href="./src/Css/keyframes.css" />
-    <link rel="stylesheet" href="./src/Css/responsive.css">
-  </head>
-  <body>
-    <main>
-      <header>
-        <p id="tittle">
-          <img src="./src/img/Logo Otavio.svg" alt="my logo" /><a href="#"
-            >Otavio<span>Xavier</span></a
-          >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Otavio Xavier</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mooli&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./src/img/Logo Otavio.svg" type="image/x-icon" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/Css/Style.css" />
+  <link rel="stylesheet" href="./src/Css/keyframes.css" />
+  <link rel="stylesheet" href="./src/Css/responsive.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <p id="tittle">
+        <img src="./src/img/Logo Otavio.svg" alt="my logo" /><a href="#">Otavio<span>Xavier</span></a>
+      </p>
+      <nav id="nav-bar">
+        <ul>
+          <li><span><a href="#about">Sobre</a></span></li>
+          <li><span><a href="#home">Inicio</a></span></li>
+          <li><span><a href="#works">Projetos</a></span></li>
+        </ul>
+      </nav>
+      <nav id="social">
+        <ul>
+          <li>
+            <a href="mailto:otavioxavierm18@gmail.com, otavioxaviermarinho@gmail.com" target="_blank">
+              <img src="./src/img/Icons/gmail-svgrepo-com.svg" id="gmail" alt="Envie um Email"
+                onmouseover="this.src='./src/img/Icons/gmail-cor.svg'"
+                onmouseout="this.src='./src/img/Icons/gmail-svgrepo-com.svg'" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/OtavioXavier" target="_blank">
+              <img src="./src/img/Icons/github-svgrepo-com.svg" id="github" alt="Github"
+                onmouseover="this.src='./src/img/Icons/github-cor.svg'"
+                onmouseout="this.src='./src/img/Icons/github-svgrepo-com.svg'" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/otatavinho/" target="_blank">
+              <img src="./src/img/Icons/instagram-svgrepo-com.svg" id="instagram" alt="Meu Instagran"
+                onmouseover="this.src='./src/img/Icons/instagram-cor.svg'"
+                onmouseout="this.src='./src/img/Icons/instagram-svgrepo-com.svg'" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/otavio-xavier%E2%98%95-4421281a6/" target="_blank">
+              <img src="./src/img/Icons/linkedin-svgrepo-com.svg" id="linkedin" alt="Meu Linkedin"
+                onmouseover="this.src='./src/img/Icons/linkedin-cor.svg'"
+                onmouseout="this.src='./src/img/Icons/linkedin-svgrepo-com.svg'" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="burger" onclick="toggleMenu()">
+        <img src="./src/img/Icons/menu.svg" alt="menu" />
+      </button>
+      <sidebar class="sidebar hiden" onclick="toggleMenu()">
+        <button class="close"><img src="./src/img/Icons/close.svg" alt=""></button>
+        <nav class="menu-list hiden">
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+          </ul>
+        </nav>
+      </sidebar>
+    </header>
+    <section id="home">
+      <div class="text-main">
+        <h2>Engenheiro de Software</h2>
+        <h1>Otavio Xavier</h1>
+        <p class="text-port">
+          Bem vindo ao meu portifolio, sou um programador Full-Stack
         </p>
-        <nav id="nav-bar">
-          <ul>
-            <li><span><a href="#about">About</a></span></li>
-            <li><span><a href="#home">Home</a></span></li>
-            <li><span><a href="#works">Projects</a></span></li>
-          </ul>
-        </nav>
-        <nav id="social" class="">
-          <ul>
-            <li>
-              <a
-                href="mailto:otavioxavierm18@gmail.com, otavioxaviermarinho@gmail.com"
-                target="_blank"
-              >
-                <img
-                  src="./src/img/Icons/gmail-svgrepo-com.svg"
-                  id="gmail"
-                  alt="send a email"
-                  onmouseover="this.src='./src/img/Icons/gmail-cor.svg'"
-                  onmouseout="this.src='./src/img/Icons/gmail-svgrepo-com.svg'"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/OtavioXavier" target="_blank">
-                <img
-                  src="./src/img/Icons/github-svgrepo-com.svg"
-                  id="github"
-                  alt="my github"
-                  onmouseover="this.src='./src/img/Icons/github-cor.svg'"
-                  onmouseout="this.src='./src/img/Icons/github-svgrepo-com.svg'"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/otatavinho/" target="_blank">
-                <img
-                  src="./src/img/Icons/instagram-svgrepo-com.svg"
-                  id="instagram"
-                  alt="my instagram"
-                  onmouseover="this.src='./src/img/Icons/instagram-cor.svg'"
-                  onmouseout="this.src='./src/img/Icons/instagram-svgrepo-com.svg'"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/otavio-xavier%E2%98%95-4421281a6/"
-                target="_blank"
-              >
-                <img
-                  src="./src/img/Icons/linkedin-svgrepo-com.svg"
-                  id="linkedin"
-                  alt="my linkedin"
-                  onmouseover="this.src='./src/img/Icons/linkedin-cor.svg'"
-                  onmouseout="this.src='./src/img/Icons/linkedin-svgrepo-com.svg'"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button class="burger" onclick="toggleMenu()">
-          <img src="./src/img/Icons/menu.svg" alt="menu" />
-        </button>
-        <sidebar class="sidebar hiden" onclick="toggleMenu()">
-          <button class="close"><img src="./src/img/Icons/close.svg" alt=""></button>
-          <nav class="menu-list  hiden">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-            </ul>
-          </nav>
-        </sidebar>
-      </header>
-      <section id="home">
-        <div class="text-main">
-          <h2>Software Engineer</h2>
-          <h1>Otavio Xavier</h1>
-          <p class="text-port">
-            Welcome to my portfolio. I am a front-end programmer
-          </p>
-          <div class="buttons">
-            <a href="https://github.com/OtavioXavier" target="_blank"
-              >All Projects</a
-            >
-            <a id="cv" href="https://drive.google.com/file/d/1B17nB8F_-pFFF_RRU7YSc7THzBtZU01b/view?usp=sharing" target="_blank"
-              >CV Download</a
-            >
-          </div>
+        <div class="buttons">
+          <a href="https://github.com/OtavioXavier" target="_blank">Todos Projetos</a>
+          <a id="cv" href="https://drive.google.com/file/d/1B17nB8F_-pFFF_RRU7YSc7THzBtZU01b/view?usp=sharing"
+            target="_blank">Baixar Currículo</a>
         </div>
-        <div class="lastProject">
-          <div class="text-lastProject">
-            <h2>
-              The last project done
+      </div>
+      <div class="lastProject">
+        <div class="text-lastProject">
+          <h2>
+            Projeto Atual
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="65"
-                height="62"
-                viewBox="0 0 65 62"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_2_19)">
-                  <path
-                    d="M65 31.0079C65 42.6753 58.2446 52.8459 48.2562 58.1295C47.3758 58.1877 46.5286 57.882 45.9523 57.2781C44.8908 56.1785 44.8662 54.235 46.0754 52.9201C47.0692 52.4301 58.228 46.6849 60.0628 33.9019C61.6826 22.6156 54.7678 14.654 53.4804 13.2296C47.5081 6.6299 40.0244 5.30946 37.8473 4.96109C28.9117 3.52371 22.1077 7.01477 19.7459 8.26838C17.6618 9.37473 13.9085 11.4204 10.6952 15.7102C9.75443 16.9669 5.44519 22.9745 5.75858 31.4212C5.95191 36.6362 7.82423 40.4756 9.05008 42.9977C9.90405 44.7556 10.5197 45.6354 16.455 54.5741C17.559 56.2367 18.7639 58.0528 19.7459 59.5353H19.741C19.7368 59.5336 19.7331 59.5311 19.7299 59.5279C17.0726 58.6177 11.3214 56.2373 6.58238 50.4395C0.50179 43.0057 0.0492553 34.8195 0.00800385 31.8098C0.00800385 31.6112 0 31.4132 0 31.2146V31.0079C0 30.8012 -2.07345e-07 30.5531 0.0166235 30.2802C0.0166235 30.1565 0.0246277 30.0241 0.0326317 29.8917V29.8422C0.0492554 29.5854 0.0658788 29.2964 0.0905066 28.9988C0.0985106 28.8002 0.123139 28.5935 0.139762 28.38C0.172394 28.0576 0.205641 27.7353 0.246893 27.4129C0.446901 25.844 0.755496 24.2911 1.17043 22.7654C1.21168 22.6169 1.25294 22.4764 1.29357 22.3273C1.30158 22.3106 1.30158 22.2858 1.3102 22.2697C1.31882 22.2536 1.3262 22.2283 1.33482 22.2035C5.30666 9.36792 17.7554 -0.000762939 32.5 -0.000762939C50.453 -0.000762939 65 13.883 65 31.0079Z"
-                    fill="#A2690B"
-                  />
-                  <path
-                    d="M56.142 30.5947C56.1051 33.8834 55.0639 38.5149 52.5987 42.3778C52.3598 42.7528 52.1566 43.0473 52.012 43.254C49.173 47.3143 45.7011 49.4558 43.8331 50.4397C42.0888 51.0516 40.2787 50.2163 39.719 48.7863C39.2997 47.7109 39.6285 46.3961 40.5422 45.4784C46.262 42.2287 49.9051 36.5478 49.8644 30.5947C49.7985 21.5237 41.1918 14.0818 32.3172 14.0571C25.2662 14.0404 19.2842 18.704 16.6841 23.9795C16.1743 25.0215 14.4627 28.6097 15.0389 33.0753C15.1621 34.0344 15.4582 35.5312 17.5073 39.6905C18.2726 41.2529 19.4325 43.4607 23.2665 49.613C25.9983 53.987 27.3393 55.9467 29.8322 60.2464C30.2189 60.9079 30.5563 61.5038 30.8364 61.9994C28.4477 61.9292 26.073 61.605 23.7522 61.0323L20.0827 55.2939C18.9437 53.5657 17.3244 51.0436 15.4773 47.9176C11.7665 41.6415 9.91576 38.5081 9.27359 35.556C7.71219 28.3727 10.9575 22.1103 11.7419 20.6716C16.6798 11.6198 25.9029 9.42067 27.375 9.0952C28.772 8.78582 37.3147 7.05329 45.4764 12.4031C51.3833 16.2747 56.2239 23.2896 56.142 30.5947Z"
-                    fill="#A2690B"
-                  />
-                  <path
-                    d="M37.4452 36.3826C39.5768 34.4558 40.5311 31.6033 39.9142 28.9408C39.1138 25.4843 35.8506 23.1114 32.4267 23.1522C28.7227 23.1974 25.9897 26.014 25.1037 28.9408C24.1149 32.2072 25.6116 34.9972 25.9262 35.5559C28.9462 39.7233 30.8136 42.634 31.9656 44.5429C32.1632 44.8739 32.846 45.9982 33.5048 47.1064C34.5995 48.9416 35.6936 50.7695 36.7963 52.6053C38.6883 55.7554 38.7875 55.8464 39.3878 56.9299C40.2356 58.4514 40.8851 59.7656 41.3543 60.7334C39.2475 61.3342 37.0868 61.7247 34.9037 61.8991C33.2192 58.2449 31.3208 54.6942 29.2184 51.2657C22.9925 41.131 18.1667 37.3145 18.5213 30.5947C18.6324 28.5652 19.1947 26.5866 20.167 24.8043C22.4045 20.7384 27.1312 17.3068 32.532 17.3643C39.7301 17.4411 46.5698 23.6906 46.4959 30.9585C46.4301 37.6808 40.5237 41.7658 39.9142 42.1711C38.6551 42.4855 37.3554 42.1872 36.6227 41.3438C35.5612 40.1199 35.7336 37.8051 37.4452 36.3826Z"
-                    fill="#A2690B"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2_19">
-                    <rect width="65" height="62" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </h2>
-            <p class="text-project">IMC Calculator</p>
-            <a
-              href="https://otavioxavier.github.io/Imc-Calculator/"
-              target="_blank"
-              ><img src="./src/img/Logo Otavio.svg" alt="the last project"
-            /></a>
-          </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="62" viewBox="0 0 65 62" fill="none">
+              <g clip-path="url(#clip0_2_19)">
+                <path
+                  d="M65 31.0079C65 42.6753 58.2446 52.8459 48.2562 58.1295C47.3758 58.1877 46.5286 57.882 45.9523 57.2781C44.8908 56.1785 44.8662 54.235 46.0754 52.9201C47.0692 52.4301 58.228 46.6849 60.0628 33.9019C61.6826 22.6156 54.7678 14.654 53.4804 13.2296C47.5081 6.6299 40.0244 5.30946 37.8473 4.96109C28.9117 3.52371 22.1077 7.01477 19.7459 8.26838C17.6618 9.37473 13.9085 11.4204 10.6952 15.7102C9.75443 16.9669 5.44519 22.9745 5.75858 31.4212C5.95191 36.6362 7.82423 40.4756 9.05008 42.9977C9.90405 44.7556 10.5197 45.6354 16.455 54.5741C17.559 56.2367 18.7639 58.0528 19.7459 59.5353H19.741C19.7368 59.5336 19.7331 59.5311 19.7299 59.5279C17.0726 58.6177 11.3214 56.2373 6.58238 50.4395C0.50179 43.0057 0.0492553 34.8195 0.00800385 31.8098C0.00800385 31.6112 0 31.4132 0 31.2146V31.0079C0 30.8012 -2.07345e-07 30.5531 0.0166235 30.2802C0.0166235 30.1565 0.0246277 30.0241 0.0326317 29.8917V29.8422C0.0492554 29.5854 0.0658788 29.2964 0.0905066 28.9988C0.0985106 28.8002 0.123139 28.5935 0.139762 28.38C0.172394 28.0576 0.205641 27.7353 0.246893 27.4129C0.446901 25.844 0.755496 24.2911 1.17043 22.7654C1.21168 22.6169 1.25294 22.4764 1.29357 22.3273C1.30158 22.3106 1.30158 22.2858 1.3102 22.2697C1.31882 22.2536 1.3262 22.2283 1.33482 22.2035C5.30666 9.36792 17.7554 -0.000762939 32.5 -0.000762939C50.453 -0.000762939 65 13.883 65 31.0079Z"
+                  fill="#A2690B" />
+                <path
+                  d="M56.142 30.5947C56.1051 33.8834 55.0639 38.5149 52.5987 42.3778C52.3598 42.7528 52.1566 43.0473 52.012 43.254C49.173 47.3143 45.7011 49.4558 43.8331 50.4397C42.0888 51.0516 40.2787 50.2163 39.719 48.7863C39.2997 47.7109 39.6285 46.3961 40.5422 45.4784C46.262 42.2287 49.9051 36.5478 49.8644 30.5947C49.7985 21.5237 41.1918 14.0818 32.3172 14.0571C25.2662 14.0404 19.2842 18.704 16.6841 23.9795C16.1743 25.0215 14.4627 28.6097 15.0389 33.0753C15.1621 34.0344 15.4582 35.5312 17.5073 39.6905C18.2726 41.2529 19.4325 43.4607 23.2665 49.613C25.9983 53.987 27.3393 55.9467 29.8322 60.2464C30.2189 60.9079 30.5563 61.5038 30.8364 61.9994C28.4477 61.9292 26.073 61.605 23.7522 61.0323L20.0827 55.2939C18.9437 53.5657 17.3244 51.0436 15.4773 47.9176C11.7665 41.6415 9.91576 38.5081 9.27359 35.556C7.71219 28.3727 10.9575 22.1103 11.7419 20.6716C16.6798 11.6198 25.9029 9.42067 27.375 9.0952C28.772 8.78582 37.3147 7.05329 45.4764 12.4031C51.3833 16.2747 56.2239 23.2896 56.142 30.5947Z"
+                  fill="#A2690B" />
+                <path
+                  d="M37.4452 36.3826C39.5768 34.4558 40.5311 31.6033 39.9142 28.9408C39.1138 25.4843 35.8506 23.1114 32.4267 23.1522C28.7227 23.1974 25.9897 26.014 25.1037 28.9408C24.1149 32.2072 25.6116 34.9972 25.9262 35.5559C28.9462 39.7233 30.8136 42.634 31.9656 44.5429C32.1632 44.8739 32.846 45.9982 33.5048 47.1064C34.5995 48.9416 35.6936 50.7695 36.7963 52.6053C38.6883 55.7554 38.7875 55.8464 39.3878 56.9299C40.2356 58.4514 40.8851 59.7656 41.3543 60.7334C39.2475 61.3342 37.0868 61.7247 34.9037 61.8991C33.2192 58.2449 31.3208 54.6942 29.2184 51.2657C22.9925 41.131 18.1667 37.3145 18.5213 30.5947C18.6324 28.5652 19.1947 26.5866 20.167 24.8043C22.4045 20.7384 27.1312 17.3068 32.532 17.3643C39.7301 17.4411 46.5698 23.6906 46.4959 30.9585C46.4301 37.6808 40.5237 41.7658 39.9142 42.1711C38.6551 42.4855 37.3554 42.1872 36.6227 41.3438C35.5612 40.1199 35.7336 37.8051 37.4452 36.3826Z"
+                  fill="#A2690B" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2_19">
+                  <rect width="65" height="62" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </h2>
+          <p class="text-project">Estuda+</p>
+          <a href="https://github.com/OtavioXavier/estuda-mais-reboot" target="_blank"><img
+              src="./src/img/Logo Otavio.svg" alt="Projeto em andamento" /></a>
         </div>
-      </section>
-      <p class="rodape">scroll down to see it all</p>
-      <section id="about" class="">
-        <div id="text-about">
-          <h2>My walk</h2>
-          <h1>About me</h1>
-          <p class="text">I was born in 2005 and since then I've been passionate about computers and everything that involves them. My father introduced me to the world of hardware at a young age and I completely fell in love. My favorite pastime was disassembling, cleaning, and reassembling my computer until I discovered programming. After that, I couldn't think of anything else.</p>
-          <p class="text">I have been studying software engineering since 2023.1 and I am part of the research center of UCSAL (Catholic University of Salvador). I work in the CIM (City Information Modelling) project, where I am the leader of the research and work. I am involved in the whole project, including the academic, back-end and front-end part.</p>
+      </div>
+    </section>
+    <p class="rodape">role para baixo para ver tudo</p>
+    <section id="about" class="">
+      <div class="text-about">
+        <h2>Minha Trajetoria</h2>
+        <h1>Sobre mim</h1>
+        <p class="text">Nasci em 2005 e desde então sou apaixonado por computadores e tudo o que
+          os envolve. Meu pai me apresentou ao mundo do hardware ainda jovem e me apaixonei completamente.
+          Meu passatempo favorito era desmontar, limpar e remontar meu computador até descobrir a programação.
+          Depois disso, não consegui pensar em mais nada.</p>
+      </div>
+      <div id="imgs-about">
+        <img class="img-thumb" src="./src/img/CIM/Imagem-CIM-1.jpeg" alt="Imagem que referencia o Cim 1">
+        <img class="img-thumb" src="./src/img/CIM/Imagem-CIM-2.jpeg" alt="Imagem que referencia o Cim 2">
+      </div>
+      <div class="text-about">
+        <p class="text">Atualmente, faço parte da AVSI Brasil, no museu da energia em Salvador-BA, como estagiário
+          educativo, onde dou aulas sobre eficiência
+          energética e monitoro oficinas de energias renováveis.</p>
+        <p class="text">Aqui, automatizei o processo de testes aplicados antes das oficinas e fichas de avaliação para
+          cada oficina, já que percebi que perdíamos muito tempo que poderia ser usado para outras atribuições passando
+          informações do papel para a planilha.</p>
         </div>
         <div id="imgs-about">
-          <img class="img-thumb" src="./src/img/CIM/Imagem-CIM-1.jpeg" alt="Imagem que referencia o Cim 1">
-          <img class="img-thumb" src="./src/img/CIM/Imagem-CIM-2.jpeg" alt="Imagem que referencia o Cim 2">
-        </section>
+          <img class="img-thumb" src="./src/img/AVSI BRASIL.jpg" alt="Imagem que referencia a AVSI Brasil">
+          <img class="img-thumb" src="./src/img/Museu da energia.jpeg" alt="Imagem que referencia Museu de energia em Salvador-BA">
         </div>
-      <section id="works" class="">
-        <h1>My Projects trail</h1>
-        <div class="block-projects">
-          <div class="project-block">
-            <h2 class="tittle-project-block">Pomodoro Timer</h2>
-            <p>I was in search of a Pomodoro timer and couldn't find a simple, beautiful one anywhere. And since I was needing and was also learning, DOM, CSS, HTML, JavaScript, I decided to start this little project. Since I'm a designer I was able to do all the design of the project by figma and then just got my hands dirty</p>
-            <a class="link-project-block" href="https://otavioxavier.github.io/Pomodoro/" target="_blank"><img src="./src/img/Icons/link-icon.svg" alt="">Website</a>
-            <div class="technologys">
-              <span>HTML</span>
-              <span>Css</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-          <div class="project-block">
-            <h2 class="tittle-project-block">IMC Calculator</h2>
-            <p>During my studies of JavaScript I realized that the logic of a BMI calculator seemed to be quite fun so I decided to create one using everything I had already learned up to that point, and it all worked out and here is the project.</p>
-            <a class="link-project-block" href="https://otavioxavier.github.io/Imc-Calculator/" target="_blank"><img src="./src/img/Icons/link-icon.svg" alt="">Website</a>
-            <div class="technologys">
-              <span>HTML</span>
-              <span>Css</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-          <div class="project-block">
-            <h2 class="tittle-project-block">X-man HUB</h2>
-            <p>This was my first project as a programmer where I participated in an intensive learning of javaScript there I learned to control the dom and the mechanisms of Css and HTML.</p>
-            <a class="link-project-block" href="https://otavioxavier.github.io/Projeto_X-Man/" target="_blank"><img src="./src/img/Icons/link-icon.svg" alt="">Website</a>
-            <div class="technologys">
-              <span>HTML</span>
-              <span>Css</span>
-              <span>JavaScript</span>
-            </div>
+    </section>
+    <section id="works" class="">
+      <h1>Minha trilha de projetos</h1>
+      <div class="block-projects">
+        <div class="project-block">
+          <h2 class="tittle-project-block">NeoRip Landing Page</h2>
+          <p>Landing page feita em conjunto com um colega de área, para um site de elojob para league of legends (jogo
+            de MOBA)</p>
+          <a class="link-project-block" href="https://devguijas.github.io/neonrip_website/" target="_blank"><img
+              src="./src/img/Icons/link-icon.svg" alt="">Website</a>
+          <div class="technologys">
+            <span>HTML</span>
+            <span>Css</span>
+            <span>JavaScript</span>
           </div>
         </div>
-      </section>
-      <footer>
-        <p> <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="65"
-          height="62"
-          viewBox="0 0 65 62"
-          fill="none"
-        >
+        <div class="project-block">
+          <h2 class="tittle-project-block">Norvest Landing Page</h2>
+          <p>landing page para Norvest, loja online de vestuario masculino. 100% aprovada pelo cliente</p>
+          <a class="link-project-block" href="https://otavioxavier.github.io/NORVEST/" target="_blank"><img
+              src="./src/img/Icons/link-icon.svg" alt="">Website</a>
+          <div class="technologys">
+            <span>HTML</span>
+            <span>Css</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+        <div class="project-block">
+          <h2 class="tittle-project-block">Hayabusa Landing Page</h2>
+          <p>Landing Page para estudos de Front-end básico</p>
+          <a class="link-project-block" href="https://otavioxavier.github.io/Hayabusa-Site/" target="_blank"><img
+              src="./src/img/Icons/link-icon.svg" alt="">Website</a>
+          <div class="technologys">
+            <span>HTML</span>
+            <span>Css</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p> <svg xmlns="http://www.w3.org/2000/svg" width="65" height="62" viewBox="0 0 65 62" fill="none">
           <g clip-path="url(#clip0_2_19)">
             <path
               d="M65 31.0079C65 42.6753 58.2446 52.8459 48.2562 58.1295C47.3758 58.1877 46.5286 57.882 45.9523 57.2781C44.8908 56.1785 44.8662 54.235 46.0754 52.9201C47.0692 52.4301 58.228 46.6849 60.0628 33.9019C61.6826 22.6156 54.7678 14.654 53.4804 13.2296C47.5081 6.6299 40.0244 5.30946 37.8473 4.96109C28.9117 3.52371 22.1077 7.01477 19.7459 8.26838C17.6618 9.37473 13.9085 11.4204 10.6952 15.7102C9.75443 16.9669 5.44519 22.9745 5.75858 31.4212C5.95191 36.6362 7.82423 40.4756 9.05008 42.9977C9.90405 44.7556 10.5197 45.6354 16.455 54.5741C17.559 56.2367 18.7639 58.0528 19.7459 59.5353H19.741C19.7368 59.5336 19.7331 59.5311 19.7299 59.5279C17.0726 58.6177 11.3214 56.2373 6.58238 50.4395C0.50179 43.0057 0.0492553 34.8195 0.00800385 31.8098C0.00800385 31.6112 0 31.4132 0 31.2146V31.0079C0 30.8012 -2.07345e-07 30.5531 0.0166235 30.2802C0.0166235 30.1565 0.0246277 30.0241 0.0326317 29.8917V29.8422C0.0492554 29.5854 0.0658788 29.2964 0.0905066 28.9988C0.0985106 28.8002 0.123139 28.5935 0.139762 28.38C0.172394 28.0576 0.205641 27.7353 0.246893 27.4129C0.446901 25.844 0.755496 24.2911 1.17043 22.7654C1.21168 22.6169 1.25294 22.4764 1.29357 22.3273C1.30158 22.3106 1.30158 22.2858 1.3102 22.2697C1.31882 22.2536 1.3262 22.2283 1.33482 22.2035C5.30666 9.36792 17.7554 -0.000762939 32.5 -0.000762939C50.453 -0.000762939 65 13.883 65 31.0079Z"
-              fill="#A2690B"
-            />
+              fill="#A2690B" />
             <path
               d="M56.142 30.5947C56.1051 33.8834 55.0639 38.5149 52.5987 42.3778C52.3598 42.7528 52.1566 43.0473 52.012 43.254C49.173 47.3143 45.7011 49.4558 43.8331 50.4397C42.0888 51.0516 40.2787 50.2163 39.719 48.7863C39.2997 47.7109 39.6285 46.3961 40.5422 45.4784C46.262 42.2287 49.9051 36.5478 49.8644 30.5947C49.7985 21.5237 41.1918 14.0818 32.3172 14.0571C25.2662 14.0404 19.2842 18.704 16.6841 23.9795C16.1743 25.0215 14.4627 28.6097 15.0389 33.0753C15.1621 34.0344 15.4582 35.5312 17.5073 39.6905C18.2726 41.2529 19.4325 43.4607 23.2665 49.613C25.9983 53.987 27.3393 55.9467 29.8322 60.2464C30.2189 60.9079 30.5563 61.5038 30.8364 61.9994C28.4477 61.9292 26.073 61.605 23.7522 61.0323L20.0827 55.2939C18.9437 53.5657 17.3244 51.0436 15.4773 47.9176C11.7665 41.6415 9.91576 38.5081 9.27359 35.556C7.71219 28.3727 10.9575 22.1103 11.7419 20.6716C16.6798 11.6198 25.9029 9.42067 27.375 9.0952C28.772 8.78582 37.3147 7.05329 45.4764 12.4031C51.3833 16.2747 56.2239 23.2896 56.142 30.5947Z"
-              fill="#A2690B"
-            />
+              fill="#A2690B" />
             <path
               d="M37.4452 36.3826C39.5768 34.4558 40.5311 31.6033 39.9142 28.9408C39.1138 25.4843 35.8506 23.1114 32.4267 23.1522C28.7227 23.1974 25.9897 26.014 25.1037 28.9408C24.1149 32.2072 25.6116 34.9972 25.9262 35.5559C28.9462 39.7233 30.8136 42.634 31.9656 44.5429C32.1632 44.8739 32.846 45.9982 33.5048 47.1064C34.5995 48.9416 35.6936 50.7695 36.7963 52.6053C38.6883 55.7554 38.7875 55.8464 39.3878 56.9299C40.2356 58.4514 40.8851 59.7656 41.3543 60.7334C39.2475 61.3342 37.0868 61.7247 34.9037 61.8991C33.2192 58.2449 31.3208 54.6942 29.2184 51.2657C22.9925 41.131 18.1667 37.3145 18.5213 30.5947C18.6324 28.5652 19.1947 26.5866 20.167 24.8043C22.4045 20.7384 27.1312 17.3068 32.532 17.3643C39.7301 17.4411 46.5698 23.6906 46.4959 30.9585C46.4301 37.6808 40.5237 41.7658 39.9142 42.1711C38.6551 42.4855 37.3554 42.1872 36.6227 41.3438C35.5612 40.1199 35.7336 37.8051 37.4452 36.3826Z"
-              fill="#A2690B"
-            />
+              fill="#A2690B" />
           </g>
           <defs>
             <clipPath id="clip0_2_19">
@@ -245,8 +211,9 @@
             </clipPath>
           </defs>
         </svg>Otavio<b>Xavier</b>| Software Engeneer</p>
-      </footer>
-    </main>
-  </body>
-  <script src="./src/js/script.js"></script>
+    </footer>
+  </main>
+</body>
+<script src="./src/js/script.js"></script>
+
 </html>

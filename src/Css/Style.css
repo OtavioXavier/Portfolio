@@ -94,14 +94,17 @@ header {
   color: var(--main--color);
 }
 
-nav#social {
+nav #social {
   clear: both;
 }
 
 #social ul li a img {
   max-width: 2rem;
-  margin: 2.3rem;
   transition: transform 0.2s;
+}
+
+#social ul {
+  gap: 3rem;
 }
 
 #social ul li a img:hover {
@@ -306,7 +309,7 @@ nav#social {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-#about #text-about {
+#about .text-about {
   display: flex;
   flex-direction: column;
   gap: 2rem;
